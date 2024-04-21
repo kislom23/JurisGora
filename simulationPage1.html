@@ -92,13 +92,13 @@
          <!-- Subpage title start -->
          <div class="page-banner-title">
             <div class="text-center">
-               <h2>Inscription </h2>
+               <h2>Demande de contact </h2>
                <ol class="breadcrumb">
                   <li>
                      <a href="#">JurisGORA/</a>
                   </li>
                   <li>
-                     Inscription 
+                    Demande de contact
                   </li>
                </ol>
             </div>
@@ -106,47 +106,62 @@
       </div><!-- Page Banner end -->
 
 
-      <!-- Inscription Start -->
-      <div class="container mt-60">
+      <!-- Simulation Start -->
+      <div class="container mt-60 mb-60">
          <div class="row">
-            <div class="col-md-4"> 
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6 offset-md-3">
                <h2 class="section-title text-center">
-                  <span>Devenez Exposant</span>
-                 Inscription
+                  <span>Faire une simulation 1/3</span>
+                 Simulation
                </h2>
-               <form action="#" method="POST"  class="ts-form register">
-                  <input type="text" class="form-control" name="name" placeholder="Nom" id="ts_contact_name">
-                  <input type="text" class="form-control" name="firstname" placeholder="Prenom" id="ts_contact_firtsname">
-                  <input type="email" class="form-control" name="email" placeholder="Adresse electronique" id="ts_contact_email">
-                  <input type="password" class="form-control" name="password" placeholder="Mot de passe" id="ts_contact_password">
-                  <input type="Password" class="form-control" name="confirmPassword" placeholder="Confirmez le mot de passe" id="ts_contact_password">
-                  <div class="ts-btn-wraper">
-                     <input type="submit" class="btn" id="ts_register_submit" value="ENVOYEZ">
+               <form id="simulation-form">
+                  <div class="form-group">
+                     <label for="domaine">Choix du domaine d'activité :</label>
+                     <select class="form-control" id="domaine" name="domaine" required>
+                        <option value="domaine1">Domaine 1</option>
+                        <option value="domaine2">Domaine 2</option>
+                        <!-- Ajoutez d'autres options selon vos besoins -->
+                     </select>
                   </div>
+                  <div class="form-group">
+                     <label for="surface">Surface du stand en m² (minimum 9m²) :</label>
+                     <input type="number" class="form-control" id="surface" name="surface" min="9" required>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" class="form-check-input" id="nouvelle-societe" name="type-stand" value="nouvelle-societe" required>
+                     <label class="form-check-label" for="nouvelle-societe">Stand nouvelle société</label>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" class="form-check-input" id="pack-exposant" name="type-stand" value="pack-exposant" required>
+                     <label class="form-check-label" for="pack-exposant">Pack exposant</label>
+                  </div>
+                  <div class="form-group">
+                     <label for="nombre-invitations">Nombre de cartes d'invitation papier complémentaires :</label>
+                     <input type="number" class="form-control" id="nombre-invitations" name="nombre-invitations" min="0" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="email">Email du destinataire :</label>
+                     <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" class="form-check-input" id="recevoir-email" name="action" value="recevoir-email" required>
+                     <label class="form-check-label" for="recevoir-email">Recevoir la simulation par mail</label>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" class="form-check-input" id="demande-reservation" name="action" value="demande-reservation" required>
+                     <label class="form-check-label" for="demande-reservation">Faire une demande de réservation</label>
+                  </div>
+                  <a href="./simulationPage2.html"><button type="submit" class="btn" >Suivant</button></a>
                </form>
-                  <p class="ml-40" style="text-align: center;">Vous avez déjà un compte ? <a href="exposant_login.html">Connexion</a></p>
-            </div>
-            <div class="col-md-4"> 
             </div>
          </div>
       </div>
-     <!-- Inscription End -->
 
-        <!-- simulation et contact start -->
-        <div class="container">
-         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 mt-20 d-flex flex-column justify-content-between" style="text-align: center;">
-               <a href="./simulationPage1.html" class="btn mb-60" style="font-size: 0.8em; text-align: center; padding-left: 4vh;">Faire une simulation<span>/</span>Réserver son stand</a>
-               <a href="../demandeContact.html" class="btn mb-60">Être contacté</a>
-            </div>
-            <div class="col-md-4"></div>
-         </div>
-        </div>
-        <!-- simulation et contact start -->
+<!-- Simulation End -->
 
+
+
+       
 
 	 <!-- ts footer area start-->
     <div class="footer-area">

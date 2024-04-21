@@ -92,13 +92,13 @@
          <!-- Subpage title start -->
          <div class="page-banner-title">
             <div class="text-center">
-               <h2>Inscription </h2>
+               <h2>Demande de contact </h2>
                <ol class="breadcrumb">
                   <li>
                      <a href="#">JurisGORA/</a>
                   </li>
                   <li>
-                     Inscription 
+                    Demande de contact
                   </li>
                </ol>
             </div>
@@ -106,47 +106,87 @@
       </div><!-- Page Banner end -->
 
 
-      <!-- Inscription Start -->
-      <div class="container mt-60">
-         <div class="row">
-            <div class="col-md-4"> 
+      <!-- Demande de contact Start -->
+<div class="container mt-60 mb-60">
+   <div class="row">
+      <div class="col-md-6 offset-md-3">
+         <h2 class="section-title text-center">
+            <span>Etre contacté</span>
+           Demande de contact 
+         </h2>
+         <form action="#" method="post">
+            <div class="form-group">
+               <label for="select1">Sujet :</label>
+               <select class="form-control" id="select1" name="select1" required>
+                  <option value="">Choisissez...</option>
+                  <option value="Stand">Stand</option>
+                  <option value="Sponsoring">Sponsoring</option>                 
+               </select>
             </div>
-            <div class="col-md-4">
-               <h2 class="section-title text-center">
-                  <span>Devenez Exposant</span>
-                 Inscription
-               </h2>
-               <form action="#" method="POST"  class="ts-form register">
-                  <input type="text" class="form-control" name="name" placeholder="Nom" id="ts_contact_name">
-                  <input type="text" class="form-control" name="firstname" placeholder="Prenom" id="ts_contact_firtsname">
-                  <input type="email" class="form-control" name="email" placeholder="Adresse electronique" id="ts_contact_email">
-                  <input type="password" class="form-control" name="password" placeholder="Mot de passe" id="ts_contact_password">
-                  <input type="Password" class="form-control" name="confirmPassword" placeholder="Confirmez le mot de passe" id="ts_contact_password">
-                  <div class="ts-btn-wraper">
-                     <input type="submit" class="btn" id="ts_register_submit" value="ENVOYEZ">
-                  </div>
-               </form>
-                  <p class="ml-40" style="text-align: center;">Vous avez déjà un compte ? <a href="exposant_login.html">Connexion</a></p>
+            <div class="form-group">
+               <label for="select2">Etre contacté par :</label>
+               <select class="form-control" id="select2" name="select2" required>
+                  <option value="">Choisissez...</option>
+                  <option value="Tel">Téléphone</option>
+                  <option value="Email">Email</option>
+                  
+               </select>
             </div>
-            <div class="col-md-4"> 
+            <div class="form-group">
+               <label for="select3">Choisir :</label>
+               <input type="email" class="form-control" name="email" placeholder="Adresse electronique" id="ts_contact_email" required>
+               <label for="select3">Ou</label>
+               <input type="number" class="form-control" name="tel" placeholder="Téléphone" id="ts_contact_tel" required>
             </div>
-         </div>
+            <div class="form-group">
+               <label for="select4">Civilité :</label>
+               <select class="form-control" id="select4" name="select4" required>
+                  <option value="">Choisissez</option>
+                  <option value="Madame">Madame</option>
+                  <option value="Monsieur">Monsieur</option>
+                  
+               </select>
+            </div>
+            <div class="form-group">
+               <label for="Nom">Nom :</label>
+               <input type="text" class="form-control" name="Nom" placeholder="" id="ts_contact_nom" required>          
+            </div>
+            <div class="form-group">
+               <label for="Prenoms">Prenoms :</label>
+               <input type="text" class="form-control" name="Nom" placeholder="" id="ts_contact_nom" required>          
+            </div>
+            <div class="form-group">
+               <label for="select5">Votre activité :</label>
+               <select class="form-control" id="select4" name="select4" required>
+                  <option value="">Choisissez</option>
+                  <option value="Presse">Presse</option>
+                  <option value="Organisation">Organisation</option>
+               </select>
+            </div>
+            <div class="form-group">
+               <label for="Société">Votre Société :</label>
+               <input type="text" class="form-control" name="Nom" placeholder="" id="ts_contact_nom" required>          
+            </div>
+            <div class="form-group">
+               <label for="select6">Votre Pays :</label>
+               <select class="form-control" id="select4" name="select4" required>
+                  <option value="">Choisissez</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Bénin">Bénin</option>
+                  <option value="Burkina-Faso">Burkina-Faso</option>
+                  <option value="Ghana">Ghana</option>
+               </select>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+            <button  class="btn"  id="cancel">Annuler</button>
+         </form>
       </div>
-     <!-- Inscription End -->
+   </div>
+</div>
+<!-- Demande de contact End -->
 
-        <!-- simulation et contact start -->
-        <div class="container">
-         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 mt-20 d-flex flex-column justify-content-between" style="text-align: center;">
-               <a href="./simulationPage1.html" class="btn mb-60" style="font-size: 0.8em; text-align: center; padding-left: 4vh;">Faire une simulation<span>/</span>Réserver son stand</a>
-               <a href="../demandeContact.html" class="btn mb-60">Être contacté</a>
-            </div>
-            <div class="col-md-4"></div>
-         </div>
-        </div>
-        <!-- simulation et contact start -->
 
+       
 
 	 <!-- ts footer area start-->
     <div class="footer-area">
