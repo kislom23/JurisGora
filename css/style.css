@@ -696,28 +696,7 @@ img.pull-right {
   background: #f4c95e;
 }
 
-.header ul.navbar-nav li .dropdown-menu {
-  padding: 10px 20px;
-  min-width: 230px;
-  margin: 0;
-  border-radius: 0;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border: none;
-}
-.header ul.navbar-nav li .dropdown-menu li a {
-  padding: 12px 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  font-size: 14px;
-  display: block;
-  color: #222;
-}
-.header ul.navbar-nav li .dropdown-menu li a:hover {
-  color: #f4c95e;
-}
-.header ul.navbar-nav li .dropdown-menu li:last-child a {
-  border-bottom: none;
-}
+
 
 .header.header-transparent {
   position: absolute;
@@ -822,7 +801,7 @@ img.pull-right {
   top: 0;
   width: 100%;
   z-index: 99;
-  background: #f4c95e;
+  background: #1b3764;
   padding: 5px 0;
 }
 .header.sticky .navbar {
@@ -845,16 +824,6 @@ img.pull-right {
   padding: 0;
 }
 
-.dropdown-menu.show {
-  display: none;
-}
-
-@media (min-width: 991px) {
-  .header ul.navbar-nav li:hover > .dropdown-menu {
-    display: block;
-    border: none;
-  }
-}
 
 /*==========================
       hero area
@@ -4396,14 +4365,112 @@ faq-item
   margin-top: 2px;
 }
 
-/*# sourceMappingURL=style.css.map */
-<<<<<<< HEAD
+
 #cancel{
   background-color: #ff0000be;
 }
 =======
 
+/* Vivien's styles begins here */
 .time {
   color: #1b3764;
 }
->>>>>>> 5330648209666bf651de5cbeb75f82f87c01aa41
+
+/* Reset CSS */
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+}
+
+/* Styles du menu principal */
+nav ul {
+  padding: 10px;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li:hover > ul li {
+  color: #f4c95e;
+}
+
+
+/* Styles des sous-menus */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px 20px;
+  min-width: 230px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+    padding: 12px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  font-size: 14px;
+  display: block;
+  color: white;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav ul ul {
+    position: static;
+    background: none;
+    display: none;
+  }
+
+  nav ul ul ul {
+    position: static;
+    background: none;
+    display: none;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  li > a{
+    color: red;
+    /* background-color: white; */
+  }
+}
+
