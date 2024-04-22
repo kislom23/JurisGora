@@ -4365,12 +4365,17 @@ faq-item
   margin-top: 2px;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+#cancel{
+  background-color: #ff0000be;
+}
+=======
 
 /* Vivien's styles begins here */
 .time {
   color: #1b3764;
 }
+
 /* Reset CSS */
 nav,
 ul,
@@ -4468,3 +4473,4 @@ nav ul ul ul {
     /* background-color: white; */
   }
 }
+
