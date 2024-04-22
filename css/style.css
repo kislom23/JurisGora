@@ -2714,6 +2714,7 @@ img.pull-right {
   background-position: center center;
 }
 .ts-intro-sponsors .sponsors-logo img {
+  height: 100px;
   margin: 0 38px 50px;
 }
 
