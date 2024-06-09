@@ -458,27 +458,30 @@ img.pull-right {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: -webkit-linear-gradient(
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  /* background-image: linear-gradient(135deg, #7387a5fe 0%, #113266 100%); */
+  /* background-image: linear-gradient(to top,#f2e2b3 0%, #30cfd0 0%, #2c3e66 80%); */
+  /* background-image: -webkit-linear-gradient(
     306deg,
     #f4c95e 0%,
     #6b5740 51%,
     #24c989 100%,
     #1b3764 100%
-  );
-  background-image: -o-linear-gradient(
+  ); */
+  /* background-image: -o-linear-gradient(
     306deg,
     #f4c95e 0%,
     #6b5740 51%,
     #24c989 100%,
     #1b3764 100%
-  );
-  background-image: linear-gradient(
+  ); */
+  /* background-image: linear-gradient(
     144deg,
     #f4c95e 0%,
     #6b5740 51%,
     #24c989 100%,
     #1b3764 100%
-  );
+  ); */
   width: 100%;
   height: 100%;
   content: "";
@@ -668,6 +671,9 @@ img.pull-right {
 
 .header .navbar-brand {
   padding: 0;
+  /* background: #152548; */
+  margin-top: -15px;
+  border-radius: 0px 0px 50px 50px ;
 }
 
 .header ul.navbar-nav > li > a {
@@ -801,7 +807,8 @@ img.pull-right {
   top: 0;
   width: 100%;
   z-index: 99;
-  background: #1b3764;
+  /* background: #03102b; */
+  background: #152548;
   padding: 5px 0;
 }
 .header.sticky .navbar {
@@ -822,6 +829,23 @@ img.pull-right {
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
+}
+
+.navbar-brand-propos {
+  padding: 0;
+  /* background: #152548; */
+  margin-top: -15px;
+  border-radius: 0px 0px 60px 60px ;
+
+}
+
+.navbar-brand-propos  img{
+width: 140px;
+
+}
+
+.navbar-brand img{
+  width: 140px;
 }
 
 
@@ -1162,8 +1186,8 @@ img.pull-right {
   margin-bottom: 40px;
 }
 .main-slider .banner-item .banner-content-wrap .banner-btn .btn.fill {
-  background: #3a6af0;
-  border-color: #3a6af0;
+  background:#2c3e66;
+  border-color: #2c3e66;
   padding: 0 55px;
 }
 .main-slider .owl-item.active .banner-item .banner-content-wrap .title-shap-img,
@@ -3896,6 +3920,12 @@ blockquote:before {
 .about .our-story {
   padding: 40px;
   background-color: #f5f6f7;
+
+  
+}
+
+.our-story p{
+  color: #000;
 }
 
 @media (min-width: 991px) {
@@ -3907,7 +3937,7 @@ blockquote:before {
 .about .our-story h4 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #838893;
+  color: #445882;
 }
 
 .about .our-story h3 {
@@ -3919,6 +3949,7 @@ blockquote:before {
 
 .about .our-story p:last-child {
   margin-bottom: 0;
+
 }
 
 .about ul {
@@ -3931,6 +3962,7 @@ blockquote:before {
   padding: 5px 0;
   display: flex;
   align-items: center;
+  color: #363232;
 }
 
 .about ul i {
@@ -4370,7 +4402,7 @@ faq-item
 #cancel{
   background-color: #ff0000be;
 }
-=======
+
 
 /* Vivien's styles begins here */
 .time {
@@ -4430,11 +4462,11 @@ nav ul ul li {
 }
 
 nav ul ul li a {
+  color: #000;
     padding: 12px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   font-size: 14px;
   display: block;
-  color: white;
 }
 
 nav ul ul ul {
@@ -4444,6 +4476,8 @@ nav ul ul ul {
 
 /* Media Queries pour la responsivité */
 @media screen and (max-width: 768px) {
+
+
   nav ul {
     display: block;
   }
@@ -4470,8 +4504,11 @@ nav ul ul ul {
   }
 
   li > a{
-    color: red;
     /* background-color: white; */
+  }
+
+  nav ul ul li a {
+    color: white;
   }
 }
 

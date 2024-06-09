@@ -66,9 +66,9 @@ tab device
     width: auto;
     height: auto; }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
+    background: #F4C95E;
     color: #fff;
-    border-color: #e7015e; }
+    border-color: #F4C95E; }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important; }
     .header ul.navbar-nav > li > a i {
@@ -270,9 +270,9 @@ small device /mobile sm and large
   .header.header-transparent.nav-border .navbar {
     padding: 10px 0; }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
+    background: #F4C95E;
     color: #fff;
-    border-color: #e7015e; }
+    border-color: #F4C95E; }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important; }
     .header ul.navbar-nav > li > a i {
