@@ -1429,6 +1429,10 @@ width: 140px;
 .single-intro-text p {
   margin-bottom: 0;
 }
+
+/* .ts-intro .col-lg-4 :hover {
+background: #000;} */
+
 .single-intro-text .count-number {
   position: absolute;
   right: -55px;
@@ -1446,6 +1450,7 @@ width: 140px;
   font-weight: 700;
   padding: 25px 30px;
 }
+
 
 .intro-video {
   width: 700px;
@@ -1575,7 +1580,7 @@ width: 140px;
   color: #120f4e;
 }
 .ts-intro.event-intro .single-intro-text:hover {
-  background: #f4c95e;
+  background: #f9d270;
 }
 
 /*==========================
